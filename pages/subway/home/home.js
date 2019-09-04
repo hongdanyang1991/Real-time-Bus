@@ -3,12 +3,13 @@ Component({
     addGlobalClass: true,
   },
   data: {
-    elements: [{
-      title: '地铁',
-      name: 'subway',
-      color: 'cyan',
-      icon: 'newsfill'
-    },
+    elements: [
+      {
+        title: '城市',
+        name: 'subway',
+        color: 'cyan',
+        icon: 'newsfill'
+      },
     ],
   }
 })

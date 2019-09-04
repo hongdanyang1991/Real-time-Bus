@@ -2,12 +2,13 @@
 <collect wx:if="{{PageCur=='collect'}}"></collect>
 <subway wx:if="{{PageCur=='subway'}}"></subway>
 <about wx:if="{{PageCur=='about'}}"></about>
+
 <view class="cu-bar tabbar bg-white shadow foot">
   <view class="action" bindtap="NavChange" data-cur="bus">
     <view class='cuIcon-cu-image'>
       <image src="/images/tabbar/basics{{PageCur=='bus'?'_cur':''}}.png"></image>
     </view>
-    <view class="{{PageCur=='bus'?'text-green':'text-gray'}}">公交</view>
+    <view class="{{PageCur=='bus'?'text-green':'text-gray'}}">指南</view>
   </view>
   <view class="action" bindtap="NavChange" data-cur="collect">
     <view class='cuIcon-cu-image'>
@@ -19,7 +20,7 @@
     <view class='cuIcon-cu-image'>
       <image src="/images/tabbar/plugin{{PageCur=='subway'?'_cur':''}}.png"></image>
     </view>
-    <view class="{{PageCur=='subway'?'text-green':'text-gray'}}">地铁</view>
+    <view class="{{PageCur=='subway'?'text-green':'text-gray'}}">城市</view>
   </view>
   <view class="action" bindtap="NavChange" data-cur="about">
     <view class='cuIcon-cu-image'>
