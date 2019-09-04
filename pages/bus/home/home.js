@@ -6,7 +6,7 @@ Component({
     elements: [
       {
         title: '养老保险',
-        name: 'social security',
+        name: 'list',
         color: 'cyan',
         icon: 'newsfill'
       },
