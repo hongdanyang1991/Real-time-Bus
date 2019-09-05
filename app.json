@@ -4,7 +4,9 @@
     "pages/bus/home/home",
     "pages/collect/home/home",
     "pages/subway/home/home",
-    "pages/about/home/home"
+    "pages/about/home/home",
+    "pages/list/list",
+    "pages/content/content"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",
