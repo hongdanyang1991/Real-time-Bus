@@ -6,12 +6,12 @@
     "pages/collect/home/home",
     "pages/subway/home/home",
     "pages/about/home/home",
-    "pages/list/list",
-    "pages/content/content"
+    "pages/list/home/home",
+    "pages/content/home/home"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",
-    "navigationBarTitleText": "Color UI",
+    "navigationBarTitleText": "五险一金办事指南",
     "navigationStyle": "custom",
     "navigationBarTextStyle": "white"
   },
