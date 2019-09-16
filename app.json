@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/bus/home/home",
+    "pages/bus/list/list",
     "pages/collect/home/home",
     "pages/subway/home/home",
     "pages/about/home/home",
