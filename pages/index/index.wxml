@@ -10,18 +10,7 @@
     </view>
     <view class="{{PageCur=='bus'?'text-green':'text-gray'}}">指南</view>
   </view>
-  <view class="action" bindtap="NavChange" data-cur="collect">
-    <view class='cuIcon-cu-image'>
-      <image src="/images/tabbar/component{{PageCur=='collect'?'_cur':''}}.png"></image>
-    </view>
-    <view class="{{PageCur=='collect'?'text-green':'text-gray'}}">收藏</view>
-  </view>
-  <view class="action" bindtap="NavChange" data-cur="subway">
-    <view class='cuIcon-cu-image'>
-      <image src="/images/tabbar/plugin{{PageCur=='subway'?'_cur':''}}.png"></image>
-    </view>
-    <view class="{{PageCur=='subway'?'text-green':'text-gray'}}">城市</view>
-  </view>
+ 
   <view class="action" bindtap="NavChange" data-cur="about">
     <view class='cuIcon-cu-image'>
       <image src="/images/tabbar/about{{PageCur=='about'?'_cur':''}}.png"></image>

@@ -1,8 +1,6 @@
 {
   "usingComponents": {
     "bus": "/pages/bus/home/home",
-    "collect": "/pages/collect/home/home",
-    "subway": "/pages/subway/home/home",
     "about": "/pages/about/home/home"
     
   }
