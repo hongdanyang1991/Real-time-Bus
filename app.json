@@ -6,6 +6,8 @@
     "pages/collect/home/home",
     "pages/subway/home/home",
     "pages/about/home/home",
+    "pages/about/log/log",
+    "pages/about/about/about",
     "pages/list/home/home",
     "pages/content/home/home"
   ],
