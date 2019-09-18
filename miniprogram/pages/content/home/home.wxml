@@ -2,6 +2,8 @@
 <view class='margin-xl bg-white padding-xl radius shadow-lg'>
   <view class='text-center margin-bottom text-lg  text-grey'>{{gjj_content.title}}</view>
   <view class='text-content'>
-    <view class='margin-top-sm'>{{gjj_content.content}}</view>
+    <view class='margin-top-sm'>
+      <rich-text nodes=" {{gjj_content.content}}" bindtap="tap"></rich-text>
+    </view>
   </view>
 </view>
