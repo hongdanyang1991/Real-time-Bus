@@ -9,7 +9,7 @@ Page({
   },
   onShareAppMessage() {
     return {
-      title: 'ColorUI-高颜值的小程序UI组件库',
+      title: '五险一金~帮你查',
       imageUrl: '/images/share.jpg',
       path: '/pages/index/index'
     }
