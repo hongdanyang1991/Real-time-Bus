@@ -9,14 +9,15 @@
  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
     
    
-    <view class="cu-item arrow">
-      <navigator class="content" url="/pages/content/home/home" hover-class="none">
+    <view class="cu-item arrow" wx:for="{{book_list}}" wx:key="key">
+      <navigator class="content" url="/pages/content/home/home?id={{item._id}}" hover-class="none">
         <text class="cuIcon-formfill text-green"></text>
-        <text class="text-grey">内容</text>
+        <text class="text-grey">{{item.name}}</text>
       </navigator>
     </view>
     
-   
+
+
   </view>
   
 </scroll-view>
