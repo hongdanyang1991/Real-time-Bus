@@ -3,7 +3,7 @@
 
   <view class="cu-btn round bg-brown.light margin-xl">
     <text class="cuIcon-locationfill text-green"></text>
-    <view class="title">北京</view>
+    <navigator class="location" url="/pages/location/home/home">北京</navigator>
   </view>
 
   <view class='nav-list'>
