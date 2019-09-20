@@ -1,10 +1,12 @@
-const app = getApp();
+const appInstance = getApp();
 
 Page({
 
+  options: {
+    addGlobalClass: true,
+  },
 
   data: {
-
     gjj_content:'',
    
   },
@@ -15,11 +17,12 @@ Page({
   */
   onLoad: function (options) {
     var _this = this;
-
+    const { globalData: { defaultCity, defaultCounty } } = appInstance
     const db = wx.cloud.database()
     // 查询当前用户所有的 counters
     db.collection('gjj-content').where({
-      'list_id': options.id
+      'list_id': options.id,
+      city: defaultCity
     }).get({
       success: res => {
         this.setData({
