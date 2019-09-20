@@ -13,7 +13,7 @@ const {
   onFail,
 } = util;
 
-const app = getApp();
+const appInstance = getApp();
 
 Page({
   data: {
