@@ -14,6 +14,7 @@ input {
   text-align: center;
   font-size: 32rpx;
   padding: 5px;
+  height: 30px;
 }
 
 /* scroll-view {
