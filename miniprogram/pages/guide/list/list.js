@@ -6,7 +6,10 @@ Page({
 
 
   data: {
-    book_list: []
+    book_list: [],
+    gjj_list:'gjj-list',
+    yanglao_list:'yanglao-list',
+    type: ''
   },
 
 
@@ -14,11 +17,20 @@ Page({
   * 生命周期函数--监听页面加载
   */
   onLoad: function (options) {
+
+    this.setData({
+      type: options.type
+    })
+
     var _this = this;
 
     const db = wx.cloud.database()
     // 查询当前用户所有的 counters
-    db.collection('gjj-list').where({
+
+
+
+
+    db.collection(options.type+'-list').where({
       _openid: this.data.openid
     }).get({
       success: res => {
