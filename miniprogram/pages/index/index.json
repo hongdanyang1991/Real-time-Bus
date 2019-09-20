@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "bus": "/pages/bus/home/home",
+    "guide": "/pages/guide/home/home",
     "about": "/pages/about/home/home"
     
   }

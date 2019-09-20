@@ -1,6 +1,6 @@
 Page({
   data: {
-    PageCur: 'bus'
+    PageCur: 'guide'
   },
   NavChange(e) {
     this.setData({

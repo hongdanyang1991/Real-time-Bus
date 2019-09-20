@@ -1,14 +1,14 @@
-<bus wx:if="{{PageCur=='bus'}}"></bus>
+<guide wx:if="{{PageCur=='guide'}}"></guide>
 <collect wx:if="{{PageCur=='collect'}}"></collect>
 <subway wx:if="{{PageCur=='subway'}}"></subway>
 <about wx:if="{{PageCur=='about'}}"></about>
 
 <view class="cu-bar tabbar bg-white shadow foot">
-  <view class="action" bindtap="NavChange" data-cur="bus">
+  <view class="action" bindtap="NavChange" data-cur="guide">
     <view class='cuIcon-cu-image'>
-      <image src="/images/tabbar/basics{{PageCur=='bus'?'_cur':''}}.png"></image>
+      <image src="/images/tabbar/basics{{PageCur=='guide'?'_cur':''}}.png"></image>
     </view>
-    <view class="{{PageCur=='bus'?'text-green':'text-gray'}}">指南</view>
+    <view class="{{PageCur=='guide'?'text-green':'text-gray'}}">指南</view>
   </view>
  
   <view class="action" bindtap="NavChange" data-cur="about">
