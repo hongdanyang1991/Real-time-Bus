@@ -5,6 +5,7 @@ Component({
   options: {
     addGlobalClass: true,
   },
+
   data: {
     location: defaultCity,
     county: defaultCounty,
@@ -46,5 +47,20 @@ Component({
         icon: 'newsfill'
       }
     ],
+  },
+
+  pageLifetimes: {
+    // 组件所在页面的生命周期函数
+    show: function () {
+      const { globalData: { defaultCity, defaultCounty } } = appInstance
+      this.setData({
+        location: defaultCity,
+        county: defaultCounty
+      })
+     },
+    hide: function () { },
+    resize: function () { },
   }
+
+  
 })

@@ -58,6 +58,8 @@ App({
     })
   },
   globalData: {
+    defaultCity: '北京市',
+    defaultCounty: '朝阳区',
     userInfo: null
   }
 })
