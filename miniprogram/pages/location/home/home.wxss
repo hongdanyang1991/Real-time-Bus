@@ -16,9 +16,9 @@ input {
   padding: 5px;
 }
 
-scroll-view {
+/* scroll-view {
   padding-left:16rpx;
-}
+} */
 
 
 .side-bar-letter-list {
