@@ -1,8 +1,13 @@
+const appInstance = getApp();
+const { globalData: { defaultCity, defaultCounty } } = appInstance
+
 Component({
   options: {
     addGlobalClass: true,
   },
   data: {
+    location: defaultCity,
+    county: defaultCounty,
     elements: [
       {
         title: '养老保险',
