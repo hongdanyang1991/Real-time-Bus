@@ -11,7 +11,7 @@
    
     <view class="cu-item arrow">
       <navigator class="content" url="/pages/about/about/about" hover-class="none">
-        <image src="/images/logo.png" class="png" mode="aspectFit"></image>
+        <image class="cuIcon-profilefill text-green" mode="aspectFit"></image>
         <text class="text-grey">关于</text>
       </navigator>
     </view>
@@ -23,7 +23,7 @@
     </view>
     <view class="cu-item arrow">
       <button class="cu-btn content" open-type="feedback">
-        <text class="cuIcon-writefill text-cyan"></text>
+        <text class="cuIcon-writefill text-green"></text>
         <text class="text-grey">意见反馈</text>
       </button>
     </view>

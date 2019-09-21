@@ -3,10 +3,8 @@
   <view class='text-center margin-bottom text-lg  text-grey'>关于五险一金办事指南</view>
   <view class='text-content'>
     <view>Hi！欢迎使用五险一金办事指南！</view>
-    <view class='margin-top-sm'>该项目.................................</view>
-    <view class='margin-top-sm'>项目是.................................</view>
-    <view class='margin-top-sm'>该项目.................................</view>
-    <view class='margin-top-sm'>更多功能敬请期待！</view>
+    <view class='margin-top-sm'>五险一金办事指南,集合北京、上海、广州、深圳、杭州、南京、武汉、重庆、四川等全国各大城市五险一金的办理流程、政策等信息。</view>
+    <view class='margin-top-sm'>更多功能敬请期待！联系微信:17600107944</view>
   </view>
 
 </view>
