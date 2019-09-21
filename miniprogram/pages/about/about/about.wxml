@@ -9,21 +9,4 @@
     <view class='margin-top-sm'>更多功能敬请期待！</view>
   </view>
 
-
-
-<demo-block title="配置显示列">
-  <van-area
-    title="标题"
-    columns-num="{{ 2 }}"
-    loading="{{ loading }}"
-    area-list="{{ areaList }}"
-    bind:change="onChange"
-    bind:confirm="onConfirm"
-  />
-</demo-block>
-
-
-<van-toast id="van-toast" />
-
-
 </view>
