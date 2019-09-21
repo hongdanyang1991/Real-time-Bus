@@ -135,6 +135,7 @@ Page({
         county: district
       })
       appInstance.globalData.defaultCity = city
+      appInstance.globalData.defaultCounty = district
       // this.getCountyList();
     }
   },
