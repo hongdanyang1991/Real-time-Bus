@@ -31,7 +31,7 @@ Page({
 
 
     db.collection(options.type+'-list').where({
-      _openid: this.data.openid
+      // _openid: this.data.openid
     }).get({
       success: res => {
         this.setData({
