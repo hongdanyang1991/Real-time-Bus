@@ -20,7 +20,7 @@ Page({
     const { globalData: { defaultCity, defaultCounty } } = appInstance
     const db = wx.cloud.database()
     // 查询当前用户所有的 counters
-    db.collection('gjj-content').where({
+    db.collection(options.type+'-content').where({
       'list_id': options.id,
       city: defaultCity
     }).get({

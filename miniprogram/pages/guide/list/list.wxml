@@ -10,7 +10,7 @@
     
    
     <view class="cu-item arrow" wx:for="{{book_list}}" wx:key="key">
-      <navigator class="content" url="/pages/content/home/home?id={{item._id}}" hover-class="none">
+      <navigator class="content" url="/pages/content/home/home?id={{item._id}}&type={{type}}" hover-class="none">
         <text class="cuIcon-formfill text-green"></text>
         <text class="text-grey">{{item.name}}</text>
       </navigator>
