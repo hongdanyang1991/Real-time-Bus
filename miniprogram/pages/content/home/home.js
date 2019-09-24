@@ -25,9 +25,16 @@ Page({
       city: defaultCity
     }).get({
       success: res => {
-        this.setData({
-          gjj_content: res.data[0],
-        });
+        
+        if (Object.keys(res.data).length === 0){
+          this.setData({
+            gjj_content: {content:"<p>收录中</p>"},
+          });
+        }else{
+          this.setData({
+            gjj_content: res.data[0],
+          });
+        }
         console.log('[数据库] [查询记录] 成功!!!: ', res)
       },
       fail: err => {
