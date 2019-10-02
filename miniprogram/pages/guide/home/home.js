@@ -1,5 +1,17 @@
+import { commonMessage } from '../../location/locale/commonMessageZhCn'
+import util from '../../../utils/util'
+
 const appInstance = getApp();
-const { globalData: { defaultCity, defaultCounty } } = appInstance
+const { globalData: { defaultCity, defaultCounty } } = appInstance;
+const {
+  isNotEmpty,
+  safeGet,
+  getCityListSortedByInitialLetter,
+  getLocationUrl,
+  getCountyListUrl,
+  getIndexUrl,
+  onFail,
+} = util;
 
 Component({
   options: {
@@ -53,19 +65,65 @@ Component({
         icon: 'newsfill'
       }
     ],
+    city: commonMessage['location.getting'],
+    currentCityCode: '',
+    inputName: '',
+    completeList: [],
+    county: '',
+    showCountyPicker: false,
+    auto: true, // 自动手动定位开关
   },
 
   pageLifetimes: {
     // 组件所在页面的生命周期函数
     show: function () {
-      const { globalData: { defaultCity, defaultCounty } } = appInstance
+      // 定位
+      this.getLocation();
+
+      const { globalData: { defaultCity, defaultCounty } } = appInstance;
+
       this.setData({
         location: defaultCity,
         county: defaultCounty
       })
+
+      
      },
     hide: function () { },
     resize: function () { },
+  },
+
+  methods:{
+
+    getLocation: function () {
+      console.log(commonMessage['location.city.getting'])
+
+      this.setData({ county: '' })
+      wx.getLocation({
+        type: 'wgs84',
+        success: res => this.getLocationFromGeoCoord(res),
+        fail: onFail(commonMessage['location.city.fail']),
+      })
+    },
+
+    getLocationFromGeoCoord: function (geoCoord) {
+      const { latitude, longitude } = geoCoord
+      wx.request({
+        url: getLocationUrl(latitude, longitude),
+        success: location => this.setCityCounty(location)
+      })
+    },
+
+    setCityCounty: function (location) {
+      const { city, adcode, district } = safeGet(['data', 'result', 'ad_info'], location)
+      if (this.data.auto) { // 如果开始手动选择，以手动为准
+        this.setData({
+          location: city,
+          county: district
+        })
+      }
+    }
+
   }
 
   
