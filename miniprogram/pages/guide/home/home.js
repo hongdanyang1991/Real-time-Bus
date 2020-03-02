@@ -2,7 +2,7 @@ import { commonMessage } from '../../location/locale/commonMessageZhCn'
 import util from '../../../utils/util'
 
 const appInstance = getApp();
-const { globalData: { defaultCity, defaultCounty } } = appInstance;
+const { globalData: { defaultCity, defaultCounty, defaultAuto } } = appInstance;
 const {
   isNotEmpty,
   safeGet,
@@ -21,6 +21,7 @@ Component({
   data: {
     location: defaultCity,
     county: defaultCounty,
+    auto: defaultAuto,
     elements: [
       {
         title: '养老保险',
@@ -77,10 +78,16 @@ Component({
   pageLifetimes: {
     // 组件所在页面的生命周期函数
     show: function () {
-      // 定位
-      this.getLocation();
+      const { globalData: { defaultCity, defaultCounty, defaultAuto } } = appInstance;
 
-      const { globalData: { defaultCity, defaultCounty } } = appInstance;
+      console.log("--------defaultAuto--------"+defaultAuto);
+    
+
+      // 定位
+      if (defaultAuto){
+        this.getLocation();
+      }
+      
 
       this.setData({
         location: defaultCity,
@@ -121,6 +128,8 @@ Component({
           location: city,
           county: district
         })
+        appInstance.globalData.defaultCity = city
+        appInstance.globalData.defaultCounty = district
       }
     }
 

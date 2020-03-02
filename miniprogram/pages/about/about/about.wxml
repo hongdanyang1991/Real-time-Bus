@@ -1,4 +1,5 @@
 <cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">关于</view></cu-custom>
+ <ad unit-id="adunit-e619f35391d4deee"></ad>
 <view class='margin-xl bg-white padding-xl radius shadow-lg'>
   <view class='text-center margin-bottom text-lg  text-grey'>关于五险一金办事指南</view>
   <view class='text-content'>

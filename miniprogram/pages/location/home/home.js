@@ -136,6 +136,8 @@ Page({
       })
       appInstance.globalData.defaultCity = city
       appInstance.globalData.defaultCounty = district
+      appInstance.globalData.defaultAuto = false
+      console.log("A--------defaultAuto--------" + appInstance.globalData.defaultAuto);
       // this.getCountyList();
     }
   },

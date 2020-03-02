@@ -3,7 +3,7 @@
     <view slot="backText">返回</view>
     <view slot="content">选择城市</view>
   </cu-custom>
-
+<ad unit-id="adunit-e619f35391d4deee"></ad>
 
 <view class="input">
   <input bindinput="bindKeyInput" bindblur="bindBlur" placeholder="输入城市名或拼音查询" placeholder-style="font-size: 30rpx" value="{{inputName}}"></input>

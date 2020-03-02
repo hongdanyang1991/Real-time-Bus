@@ -1,10 +1,14 @@
 <scroll-view scroll-y class="scrollPage">
   <image src='/images/BasicsBg.png' mode='widthFix' class='png' style='width:100%;height:486rpx'></image>
 
+<ad unit-id="adunit-e619f35391d4deee"></ad>
+
   <view class="cu-btn round bg-brown.light margin-xl">
     <text class="cuIcon-locationfill text-green"></text>
     <navigator class="location" url="/pages/location/home/home">{{location}}{{county}}</navigator>
   </view>
+
+
 
   <view class='nav-list'>
     <navigator open-type="navigate" hover-class='none' url="/pages/guide/list/list?type={{item.type}}" class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key>

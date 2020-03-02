@@ -60,6 +60,7 @@ App({
   globalData: {
     defaultCity: '北京市',
     defaultCounty: '朝阳区',
+    defaultAuto:true,
     userInfo: null
   }
 })
