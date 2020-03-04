@@ -1,5 +1,5 @@
 <cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">日志</view></cu-custom>
-<ad unit-id="adunit-e619f35391d4deee"></ad>
+
 <view class="cu-timeline">
   <view class="cu-item text-green">
     <view class="bg-green content shadow">
@@ -11,3 +11,4 @@
     </view>
   </view>
 </view>
+
