@@ -1,13 +1,11 @@
 <cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">内容</view></cu-custom>
  
  
-<view class='margin-xl bg-white padding-xl radius shadow-lg'>
-  <view class='text-center margin-bottom text-lg  text-grey'>{{gjj_content.title}}</view>
+<view class='margin-xl bg-white radius shadow-lg'>
+  <view class='text-center padding-top-xl .padding-bottom-xl text-lg  text-grey'>{{gjj_content.title}}</view>
   <ad unit-id="adunit-e619f35391d4deee"></ad>
   <view class='text-content'>
-    
-    <view class='margin-top-sm'>
-    
+    <view class='padding-xl'>
       <rich-text nodes=" {{gjj_content.content}}" bindtap="tap"></rich-text>
     </view>
   </view>
