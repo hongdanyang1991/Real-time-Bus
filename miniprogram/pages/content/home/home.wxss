@@ -1,1 +1,6 @@
 /* pages/content/home/home.wxss */
+
+.adContainer {
+  width: 300px;
+  background: red;
+}
